@@ -1,3 +1,5 @@
+# This program is for checking the prime number
+
 number_value = int(input("Please enter an integer :"))
 flag = False
 
