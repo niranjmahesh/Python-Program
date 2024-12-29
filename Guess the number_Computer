@@ -2,21 +2,27 @@
 
 import random
 
-def guess(x):
-     
-     guess  = 0
-     random_number = random.randint(1,x)
-     while guess  != random_number:
-        guess = int(input("Guess the number between 1 and 10" )
-        
-        if guess < random_number:
-             print ("Wrong answer. guessed number is further below")
-        elif guess > random_number:
-            print ("Wrong answer. guessed number is further above")
+end_range = int(input("Please provide the range"))
+guess_count = int(input("please enter the number of guesses"))
 
+random_number = random.randint(1,end_range)
+   
+    
+while guess_count  != 0:
 
-guess(10)
+        guessed_number = int(input(f"Guess the number between 1 and {end_range}" ))
 
-     
+        if guessed_number  < random_number:
+             print (f"Wrong answer. {guessed_number} is below the random number . you got {guess_count-1} to go")
+        elif guessed_number > random_number:
+            print (f"Wrong answer. {guessed_number} is further above the random number . you got {guess_count-1} to go")
+        elif guessed_number == random_number:
+             print(f"congratulations. You have guessed the number {random_number} correctly ")
+            
 
+        guess_count = guess_count - 1   
+
+    
+print("Game Over! The number was {}" .format(random_number))
+    
     
