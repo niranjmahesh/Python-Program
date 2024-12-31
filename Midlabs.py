@@ -1,3 +1,4 @@
+#Fill in the blanks 
 #Today I went to the zoo. I saw a(n). ______(adjective). ______(Noun) jumping up and down in its tree. He ______(verb, past tense) ______(adverb).
 
 adjective = input ("Please enter an adjective")
